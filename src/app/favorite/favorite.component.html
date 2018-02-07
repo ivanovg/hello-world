@@ -1,6 +1,9 @@
-<span class="glyphicons"
-  [class.glyphicon-star]="isFavorite"
-  [class.glyphicon-star-empty]="!isFavorite"
+  <span class="fa" style="font-size:48px"
+  [ngClass]="{
+    'fa-star': isSelected,
+    'fa-star-o': !isSelected
+  }"
   (click)="onClick()"
 ></span>
+
 
